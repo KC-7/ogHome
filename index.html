@@ -9,6 +9,20 @@
   
   <link rel="icon" type="image/png" href="img/logo.png">
 
+  <link rel="canonical" href="https://www.ogormanhomeimprovements.com/">
+
+  <meta property="og:title" content="O Gorman Home Improvements – Dublin">
+  <meta property="og:description" content="Reliable window cleaning, gutter clearing, & home services in Dublin & Leinster.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ogormanhomeimprovements.com/">
+  <meta property="og:image" content="https://www.ogormanhomeimprovements.com/img/flyer.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="O Gorman Home Improvements – Dublin">
+  <meta name="twitter:description" content="Reliable window cleaning, gutter clearing, & home services in Dublin & Leinster.">
+  <meta name="twitter:image" content="https://www.ogormanhomeimprovements.com/img/flyer.jpg">
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
@@ -22,6 +36,7 @@
       --og-green: #008b3b;
       --og-green-dark: #00662b;
       --og-orange: #f5821f;
+      --og-orange-dark: #e07015; /* New */
       --og-dark: #123024;
       --og-light: #f4f7f6;
       --font-heading: 'Poppins', sans-serif;
@@ -99,6 +114,21 @@
       color: #fff;
       transform: translateY(-2px);
     }
+    
+    /* New Orange Button */
+    .btn-og-orange {
+      background: var(--og-orange);
+      border: 2px solid var(--og-orange);
+      color: #fff;
+    }
+    .btn-og-orange:hover {
+      background: var(--og-orange-dark);
+      border-color: var(--og-orange-dark);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    
+    /* Old Outline Button */
     .btn-og-outline {
       background: transparent;
       border: 2px solid var(--og-orange);
@@ -107,6 +137,17 @@
     .btn-og-outline:hover {
       background: var(--og-orange);
       color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn-og-white {
+      background: #fff;
+      border: 2px solid #fff;
+      color: var(--og-dark);
+    }
+    .btn-og-white:hover {
+      background: #f0f0f0;
+      border-color: #f0f0f0;
+      color: var(--og-dark);
       transform: translateY(-2px);
     }
 
@@ -203,6 +244,11 @@
         background: var(--og-green);
         color: #fff;
     }
+    
+    /* --- Share Button (Hides by default) --- */
+    #shareBtn {
+        display: none;
+    }
 
     /* --- Process Section --- */
     .process-step {
@@ -223,6 +269,14 @@
       justify-content: center;
       font-size: 2rem;
       margin-bottom: 1.5rem;
+    }
+    .process-step p a {
+        color: var(--og-green);
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .process-step p a:hover {
+        text-decoration: underline;
     }
 
     /* --- Testimonials Section --- */
@@ -428,7 +482,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items: center">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
@@ -458,14 +512,17 @@
           Sparkling Windows, Clear Gutters. <br>Your Home, Cared For.
         </h1>
         <p class="lead mb-5 text-light opacity-75">
-          Your local, reliable, and fully insured team for streak-free window cleaning, gutter maintenance, painting, and pressure washing.
+          Your local, reliable, and fully insured professional for streak-free window cleaning, gutter maintenance, painting, and pressure washing.
         </p>
         <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
           <a href="tel:0858516961" class="btn btn-lg btn-og-primary">
             <i class="bi bi-telephone-fill me-2"></i> Call Now
           </a>
-          <a href="https://wa.me/353858516961" target="_blank" class="btn btn-lg btn-og-outline">
-            <i class="bi bi-whatsapp me-2"></i> WhatsApp Quote
+          <button id="shareBtn" class="btn btn-lg btn-og-white">
+            <i class="bi bi-share-fill me-2"></i> Share
+          </button>
+          <a href="https://wa.me/353858516961?text=Hi%20James!%20I%20saw%20your%20website%20and%20would%20like%20to%20get%20a%20quote." target="_blank" class="btn btn-lg btn-og-orange">
+            <i class="bi bi-whatsapp me-2"></i> WhatsApp
           </a>
         </div>
         <div class="mt-4 small opacity-75">
@@ -614,7 +671,7 @@
             <div class="col-sm-6">
                 <div class="d-flex align-items-center">
                     <i class="bi bi-emoji-smile text-success fs-4 me-3"></i>
-                    <span class="fw-bold">Friendly Team</span>
+                    <span class="fw-bold">Friendly Service</span>
                 </div>
             </div>
           </div>
@@ -630,24 +687,12 @@
               <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Co. Wicklow</span>
             </div>
           </div>
-
         </div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
         <div class="position-relative">
             <div class="rounded-4 shadow-lg overflow-hidden">
-                 <img src="img/flyer.jpg" class="img-fluid w-100" alt="O Gorman services flyer for window and gutter cleaning" loading="lazy">
-            </div>
-            <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded-3 shadow m-4 d-none d-md-block">
-                <div class="d-flex align-items-center gap-3">
-                    <div class="bg-success text-white rounded-circle p-2">
-                        <i class="bi bi-telephone-fill"></i>
-                    </div>
-                    <div>
-                        <small class="text-muted d-block">Have questions?</small>
-                        <span class="fw-bold">085 851 6961</span>
-                    </div>
-                </div>
+                 <img src="img/flyer2.png" class="img-fluid w-100" alt="O Gorman services flyer for painting and pressure washing" loading="lazy">
             </div>
         </div>
       </div>
@@ -666,7 +711,12 @@
         <div class="process-step">
           <div class="process-icon"><i class="bi bi-chat-text-fill"></i></div>
           <h4 class="fw-bold">1. Get in Touch</h4>
-          <p class="text-muted">Call, WhatsApp, or email us. We'll discuss your needs and provide a free, no-obligation quote.</p>
+          <p class="text-muted">
+            <a href="tel:0858516961">Call</a>, 
+            <a href="https://wa.me/353858516961" target="_blank">WhatsApp</a>, or 
+            <a href="mailto:og.homeimprovements25@gmail.com">email</a> us. 
+            We'll discuss your needs and provide a free, no-obligation quote.
+          </p>
         </div>
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
@@ -705,12 +755,12 @@
             <div class="carousel-item active">
               <div class="testimonial-card">
                 <p class="testimonial-quote">
-                  "Absolutely fantastic job on the windows. They've never been so clean! Arrived on time, was professional, and the price was very reasonable. Highly recommend."
+                  "James is very knowledgeable and was the best price quoted. Very efficient and reliable. Local lad and does great work. Highly recommend!"
                 </p>
                 <div class="testimonial-author">
                   <div>
-                    <h6 class="mb-0">Sarah M.</h6>
-                    <span>Rathfarnham, Dublin</span>
+                    <h6 class="mb-0">E T</h6>
+                    <span>Google Review</span>
                   </div>
                 </div>
               </div>
@@ -718,12 +768,12 @@
             <div class="carousel-item">
               <div class="testimonial-card">
                 <p class="testimonial-quote">
-                  "My driveway looks brand new after the pressure wash. I didn't realize how dirty it had gotten. Excellent service, will definitely be using them again for the gutters."
+                  "Trustworthy, dependable, reliable and honest. Can’t say any more about James"
                 </p>
                 <div class="testimonial-author">
                   <div>
-                    <h6 class="mb-0">David L.</h6>
-                    <span>Malahide, Co. Dublin</span>
+                    <h6 class="mb-0">G C</h6>
+                    <span>Google Review</span>
                   </div>
                 </div>
               </div>
@@ -731,12 +781,12 @@
             <div class="carousel-item">
               <div class="testimonial-card">
                 <p class="testimonial-quote">
-                  "Called for a handyman job to fix a few things. The work was done quickly, to a high standard, and they left the place spotless. 5-star service."
+                  "Great cleaning done on windows and a friendly service well recommended."
                 </p>
                 <div class="testimonial-author">
                   <div>
-                    <h6 class="mb-0">Aoife K.</h6>
-                    <span>Leixlip, Co. Kildare</span>
+                    <h6 class="mb-0">Dean Carrier</h6>
+                    <span>Google Review</span>
                   </div>
                 </div>
               </div>
@@ -749,6 +799,13 @@
             <span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span>
           </button>
         </div>
+        
+        <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://share.google/zopCJfIE6BYjuQOCO" target="_blank" class="btn btn-og-outline">
+                Read More Reviews on Google <i class="bi bi-google ms-1"></i>
+            </a>
+        </div>
+
       </div>
     </div>
   </div>
@@ -927,25 +984,32 @@
       </p>
     </div>
     <div class="row g-4">
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
         <a href="tel:0858516961" class="contact-card">
           <div class="icon"><i class="bi bi-telephone-fill"></i></div>
           <h4>Call Us</h4>
           <p class="word-break-all">085 851 6961</p>
         </a>
       </div>
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
         <a href="https://wa.me/353858516961" target="_blank" class="contact-card">
           <div class="icon"><i class="bi bi-whatsapp"></i></div>
           <h4>WhatsApp</h4>
           <p>Send a Message</p>
         </a>
       </div>
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
         <a href="mailto:og.homeimprovements25@gmail.com" class="contact-card">
           <div class="icon"><i class="bi bi-envelope-fill"></i></div>
           <h4>Email Us</h4>
           <p class="word-break-all">og.homeimprovements25@gmail.com</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <a href="https://m.me/61575668266224" target="_blank" class="contact-card">
+          <div class="icon"><i class="bi bi-messenger"></i></div>
+          <h4>Facebook</h4>
+          <p>Send a Message</p>
         </a>
       </div>
     </div>
@@ -960,6 +1024,11 @@
         <p>
           Professional, reliable, and fully insured home improvement services across Dublin and Leinster.
         </p>
+        <h6 class="text-white mt-4">Follow Us</h6>
+        <div class="d-flex gap-3">
+            <a href="https://www.facebook.com/p/O-Gorman-Home-Improvements-61575668266224/" target="_blank" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/ogormanhomimprovements" target="_blank" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+        </div>
       </div>
       <div class="col-md-4">
         <h5 class="text-white">Quick Links</h5>
@@ -976,13 +1045,10 @@
       <div class="col-md-4">
         <h5 class="text-white">Contact</h5>
         <ul class="list-unstyled">
-            <li class="word-break-all"><i class="bi bi-telephone me-2"></i> 085 851 6961</li>
-            <li class="word-break-all"><i class="bi bi-envelope me-2"></i> og.homeimprovements25@gmail.com</li>
-            <li class="mt-3">
-                <a href="https://wa.me/353858516961" class="whatsapp-pill">
-                    <i class="bi bi-whatsapp"></i> Message on WhatsApp
-                </a>
-            </li>
+            <li class="word-break-all"><i class="bi bi-telephone me-2"></i> <a href="tel:0858516961">085 851 6961</a></li>
+            <li class="word-break-all"><i class="bi bi-envelope me-2"></i> <a href="mailto:og.homeimprovements25@gmail.com">og.homeimprovements25@gmail.com</a></li>
+            <li class="word-break-all"><i class="bi bi-whatsapp me-2"></i> <a href="https://wa.me/353858516961" target="_blank">Message on WhatsApp</a></li>
+            <li class="word-break-all"><i class="bi bi-messenger me-2"></i> <a href="https://m.me/61575668266224" target="_blank">Facebook Message</a></li>
         </ul>
       </div>
     </div>
@@ -1055,6 +1121,27 @@
         backToTopButton.classList.add('active');
       } else {
         backToTopButton.classList.remove('active');
+      }
+    });
+  }
+
+  // Web Share API Button
+  const shareBtn = document.getElementById('shareBtn');
+  const shareData = {
+    title: 'O Gorman Home Improvements',
+    text: 'I found this great local service for window cleaning and home improvements in Dublin.',
+    url: 'https://www.ogormanhomeimprovements.com'
+  };
+
+  if (navigator.share && navigator.canShare(shareData)) {
+    // Show the button only if Web Share API is supported
+    shareBtn.style.display = 'block'; 
+    
+    shareBtn.addEventListener('click', async () => {
+      try {
+        await navigator.share(shareData);
+      } catch (err) {
+        console.error('Error sharing:', err);
       }
     });
   }
