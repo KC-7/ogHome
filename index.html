@@ -211,7 +211,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background: url("img/van.jpg") center/cover no-repeat;
+      background: url("img/hero.jpeg") center/cover no-repeat;
       transform: scale(1.05);
       z-index: 0;
     }
@@ -292,11 +292,6 @@
     .service-card:hover .service-icon-wrapper {
       background: var(--og-green);
       color: #fff;
-    }
-
-    /* --- Share Button (Hides by default) --- */
-    #shareBtn {
-      display: none;
     }
 
     /* --- Process Section --- */
@@ -701,7 +696,7 @@
 
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
 
-  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <nav id="mainNav" class="navbar navbar-expand-xl fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#hero">
         <img src="img/logo.png" alt="O Gorman Home Improvements Logo" class="me-2" loading="lazy">
@@ -739,21 +734,20 @@
             </span>
           </div>
           <h1 class="display-4 fw-bold mb-4 lh-sm">
-            Sparkling Windows. Clean Gutters, Fascia + Soffits. <br>Rejuvenated Driveway.
+            Sparkling Windows.<br>Clean Gutters, Fascia &amp; Soffits.<br>Rejuvenated Driveway.
           </h1>
           <p class="lead mb-5 text-light opacity-75" style="max-width: 700px; margin: 0 auto;">
-            Your local, reliable, and fully insured professional for streak-free window cleaning, gutter, fascia +
-            soffit cleaning, and pressure / soft washing.
+            Your local, reliable, and fully insured professional for streak-free window cleaning.<br>Gutter, fascia &amp; soffit cleaning.<br>Pressure / soft washing.
           </p>
-          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-            <a href="tel:0858516961" class="btn btn-lg btn-og-primary">
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mx-auto" style="max-width: 650px;">
+            <a href="tel:0858516961" class="btn btn-lg btn-og-primary flex-fill">
               <i class="bi bi-telephone-fill me-2"></i> Call Now
             </a>
-            <button id="shareBtn" class="btn btn-lg btn-og-white">
+            <button class="btn btn-lg btn-og-white flex-fill btn-share" style="display: none;">
               <i class="bi bi-share-fill me-2"></i> Share
             </button>
             <a href="https://wa.me/353858516961?text=Hi%20James!%20I%20saw%20your%20website%20and%20would%20like%20to%20get%20a%20quote."
-              target="_blank" class="btn btn-lg btn-og-orange">
+              target="_blank" class="btn btn-lg btn-og-orange flex-fill">
               <i class="bi bi-whatsapp me-2"></i> WhatsApp
             </a>
           </div>
@@ -895,28 +889,34 @@
             </div>
 
             <div class="mt-4">
-              <h5 class="fw-bold small">Serving All Areas of Dublin:</h5>
+              <h5 class="fw-bold small">Serving Dublin:</h5>
               <div class="d-flex flex-wrap">
                 <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Dublin City Centre</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">North Dublin</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">South Dublin</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">West Dublin</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Swords</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Malahide</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Howth</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Dublin Northside</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Artane</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Coolock</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Raheny</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Kilbarrack</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Donaghmede</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Beaumont</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Santry</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Whitehall</span>
                 <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Clontarf</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Killester</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Marino</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Fairview</span>
                 <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Drumcondra</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Castleknock</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Blanchardstown</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Lucan</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Clondalkin</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Tallaght</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Dundrum</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Dún Laoghaire</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Blackrock</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Stillorgan</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Rathfarnham</span>
-                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Templeogue</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Howth</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Sutton</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Baldoyle</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Portmarnock</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Malahide</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Swords</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Ballymun</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Finglas</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Glasnevin</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Phibsborough</span>
+                <span class="badge bg-light text-dark border shadow-sm me-2 mb-2 px-3 py-2">Smithfield</span>
               </div>
             </div>
           </div>
@@ -1082,8 +1082,8 @@
         </p>
       </div>
       <div class="row g-3">
-        <!-- Driveway Before/After -->
-        <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+        <!-- Driveway Before/After pair 1 -->
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
           <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
             data-bs-img="img/drivewayBefore.jpg">
             <span class="before-after-label">Before</span>
@@ -1091,7 +1091,7 @@
               loading="lazy">
           </div>
         </div>
-        <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
           <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
             data-bs-img="img/drivewayAfter.jpg">
             <span class="before-after-label bg-success">After</span>
@@ -1100,8 +1100,44 @@
           </div>
         </div>
 
+        <!-- Driveway Before/After pair 2 -->
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-bs-img="img/drivewayBefore1.jpeg">
+            <span class="before-after-label">Before</span>
+            <img src="img/drivewayBefore1.jpeg" class="gallery-thumb" alt="Driveway before professional cleaning process"
+              loading="lazy">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-bs-img="img/drivewayAfter1.jpeg">
+            <span class="before-after-label bg-success">After</span>
+            <img src="img/drivewayAfter1.jpeg" class="gallery-thumb" alt="Driveway after high-quality professional cleaning"
+              loading="lazy">
+          </div>
+        </div>
+
+        <!-- Driveway Before/After pair 3 -->
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-bs-img="img/drivewayBefore2.jpeg">
+            <span class="before-after-label">Before</span>
+            <img src="img/drivewayBefore2.jpeg" class="gallery-thumb" alt="Large driveway section before treatment"
+              loading="lazy">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
+            data-bs-img="img/drivewayAfter2.jpeg">
+            <span class="before-after-label bg-success">After</span>
+            <img src="img/drivewayAfter2.jpeg" class="gallery-thumb" alt="Restored and bright driveway after deep clean"
+              loading="lazy">
+          </div>
+        </div>
+
         <!-- Gutters Before/After -->
-        <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
           <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
             data-bs-img="img/guttersBefore.jpg">
             <span class="before-after-label">Before</span>
@@ -1109,7 +1145,7 @@
               loading="lazy">
           </div>
         </div>
-        <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
           <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
             data-bs-img="img/guttersAfter.jpg">
             <span class="before-after-label bg-success">After</span>
@@ -1119,14 +1155,14 @@
         </div>
 
         <!-- Roof Before/After -->
-        <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
           <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
             data-bs-img="img/roofBefore.jpg">
             <span class="before-after-label">Before</span>
             <img src="img/roofBefore.jpg" class="gallery-thumb" alt="Mossy roof before soft washing" loading="lazy">
           </div>
         </div>
-        <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
           <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
             data-bs-img="img/roofAfter.jpg">
             <span class="before-after-label bg-success">After</span>
@@ -1136,14 +1172,14 @@
         </div>
 
         <!-- Shed Before/After -->
-        <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
           <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
             data-bs-img="img/shedBefore.jpg">
             <span class="before-after-label">Before</span>
             <img src="img/shedBefore.jpg" class="gallery-thumb" alt="Old shed before painting" loading="lazy">
           </div>
         </div>
-        <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="350">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="350">
           <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal"
             data-bs-img="img/shedAfter.jpg">
             <span class="before-after-label bg-success">After</span>
@@ -1287,6 +1323,7 @@
               </table>
 
               <div class="pricing-note mt-3">
+                <strong><i class="bi bi-calendar-check me-1"></i> Frequency:</strong> Dependent on cleaning round area schedule.<br>
                 <strong><i class="bi bi-check-circle me-1"></i> Included:</strong> Frames, sills, and doors.<br>
                 <strong><i class="bi bi-plus-circle me-1"></i> Extras:</strong> Deep cleans available. Additional
                 charges for extensions &amp; conservatories.
@@ -1407,7 +1444,7 @@
               <div class="text-center mb-4">
                 <div class="display-6 fw-bold" style="color: var(--og-green);">From €5 <small
                     class="fs-6 fw-normal text-muted">per m²</small></div>
-                <p class="text-muted mt-2 mb-0">Includes resanding &amp; biocide treatment</p>
+                <p class="text-muted mt-2 mb-0">Includes resanding &amp; biocide / chemical treatment</p>
               </div>
 
               <table class="pricing-table">
@@ -1444,13 +1481,18 @@
       <div class="text-center mt-5" data-aos="fade-up">
         <p class="text-muted mb-3"><i class="bi bi-credit-card me-2"></i><strong>Credit card payments accepted</strong>
         </p>
-        <a href="tel:0858516961" class="btn btn-og-primary me-2">
-          <i class="bi bi-telephone-fill me-1"></i> Call for a Quote
-        </a>
-        <a href="https://wa.me/353858516961?text=Hi!%20I'd%20like%20to%20get%20a%20quote." target="_blank"
-          class="btn btn-og-orange">
-          <i class="bi bi-whatsapp me-1"></i> WhatsApp Us
-        </a>
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mx-auto" style="max-width: 650px;">
+          <a href="tel:0858516961" class="btn btn-lg btn-og-primary flex-fill">
+            <i class="bi bi-telephone-fill me-2"></i> Call Now
+          </a>
+          <button class="btn btn-lg btn-og-white flex-fill btn-share" style="display: none;">
+            <i class="bi bi-share-fill me-2"></i> Share
+          </button>
+          <a href="https://wa.me/353858516961?text=Hi!%20I'd%20like%20to%20get%20a%20quote." target="_blank"
+            class="btn btn-lg btn-og-orange flex-fill">
+            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -1473,7 +1515,7 @@
               </h2>
               <div id="faq-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  We cover all areas of Dublin City and County, including North Dublin, South Dublin, West Dublin, and the city centre. From Swords and Malahide to Tallaght and Dún Laoghaire — if you're in Dublin, we've got you covered. Give us a call to confirm!
+                  We are based in Dublin 5 and mainly cover the Northside and City Centre, but enquiries from all areas of Dublin are very welcome! If you're in Dublin, give us a call to confirm we cover your area.
                 </div>
               </div>
             </div>
@@ -1684,7 +1726,7 @@
     }
 
     // Web Share API Button
-    const shareBtn = document.getElementById('shareBtn');
+    const shareBtns = document.querySelectorAll('.btn-share');
     const shareData = {
       title: 'O Gorman Home Improvements',
       text: 'I found this great local service for window cleaning and home improvements in Dublin.',
@@ -1692,15 +1734,15 @@
     };
 
     if (navigator.share && navigator.canShare(shareData)) {
-      // Show the button only if Web Share API is supported
-      shareBtn.style.display = 'block';
-
-      shareBtn.addEventListener('click', async () => {
-        try {
-          await navigator.share(shareData);
-        } catch (err) {
-          console.error('Error sharing:', err);
-        }
+      shareBtns.forEach(btn => {
+        btn.style.display = 'block';
+        btn.addEventListener('click', async () => {
+          try {
+            await navigator.share(shareData);
+          } catch (err) {
+            console.error('Error sharing:', err);
+          }
+        });
       });
     }
 
